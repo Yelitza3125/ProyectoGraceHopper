@@ -1,0 +1,83 @@
+
+/*Mediante el selector de tipo, se añade el estilo a la etiqueta body, el tipo de fuente y el relleno*/
+body {
+    font-family: sans-serif;
+    padding: 5px
+}
+
+/* Meadiante un selector de anidamiento añadimos diseño al elemento h1, que se encuentra dentro del elemento header. */
+
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-family: serif;
+}
+
+/*Mediante un selector de anidamiento, seleccionados la etuqueta hr que está dentro de la etiqueta header, para separar mejor la línea horizontal*/
+
+header hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Con un selector de clase, seleccionamos el atributo clase con valor biography, para definir su ancho y su display, para que se comporte como inline, pero mantenga su naturaleza bloque. También se determina el tamaño de fuente y el interlineado*/
+.biography {
+    width: 74%;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Con un selector de clase, seleccionamos el atributo clase con valor summary, y aplicamos el mismo display que biography, lo alineamos, ya que la clase "summary" es el valor de atributo en la etiqueta aside*/
+.summary {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+/*Con un selector de clase, seleccionamos el atributo clase con valor "summary-table", que es la tabla en nuestra página web, y lo estilizamos. Aplicamos el borde, el espacio y el color de fondo; además del relleno y el tamaño de fuente del contenido*/
+.summary-table {
+    border: 1px solid #a2a9b1;
+    border-spacing: 2px;
+    background-color: #f8f9fa;
+    padding: 1px;
+    font-size: 14px;
+}
+
+/*Mediante un selector anidado, selecionamos al elemento th(encabezado de la tabla), que está dentro de la etiqueta thead, que a su vez está dentro del elemento con valor de clase "summary-table"*/
+.summary-table thead th {
+    background-color: #B0C4DE;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+
+/*Mediante un selector anidado, seleccionamos al "primer hijo" de tr que es una fila, que está dentro del contenido tbody(cuerpo de la tabla), que a su vez está dentro del elemento con valor de clase "summary-table"; para alinear el texto al centro*/
+.summary-table tbody tr:first-child {
+    text-align: center;
+}
+
+/*Mediante un selector anidado, seleccionamos a todos los elementos th que estén dentro de la etiqueta tbody (el cuerpo de la tabla) y que a su vez esten dentro de un elemento con valor de clase "summary-table" y alineamos el texto a la izquierda*/
+.summary-table tbody th {
+    text-align: left;
+}
+
+
+/*Mediante un selector de etiqueta, establecemos el ancho de la imagen principal*/
+img {
+    width: 200px;
+}
+
+/*En las siguientes líneas, mediante un selector único, establecemos el ancho de la imágenes que están en el cuerpo de la tabla*/
+#flag {
+    width: 25px;
+}
+
+#navy {
+    width: 25px;
+}
+
+#star {
+    width: 25px;
+}
